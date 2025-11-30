@@ -1,3 +1,5 @@
+# SYNC
+# System for Networked Clubs
 # AIT Pune Club Management
 
 A modern, full-stack **Club Management Portal** for  
