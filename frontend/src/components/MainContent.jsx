@@ -1,7 +1,7 @@
 import React from 'react'
-import './site.css'
+import '../styles/site.css'
 import Home from '../sections/Home'
-import Clubs from '../sections/Clubs'
+import Clubs from '../sections/Clubs/Clubs'
 
 export default function MainContent(){
   return (

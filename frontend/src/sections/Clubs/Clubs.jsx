@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import ClubCard from '../components/ClubCard'
-import ApplicationForm from '../components/ApplicationForm'
-import '../sections/club.css'
-import '../components/form.css'
+import ClubCard from '../../components/ClubCard'
+import ApplicationForm from '../../components/ApplicationForm'
+import './club.css'
 
 
 const clubs = [

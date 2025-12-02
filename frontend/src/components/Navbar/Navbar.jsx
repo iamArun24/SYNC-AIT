@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import './NavBar.css'
-import logo from '../assets/clblogos/google-developers.svg'
-import Hamburger from './Hamburger'
-import SideBar from './SideBar'
+import logo from '../../assets/clblogos/google-developers.svg'
+import Hamburger from '../Hamburger'
+import SideBar from '../SideBar'
 
 export default function Navbar(){
   const [open, setOpen] = useState(false)
