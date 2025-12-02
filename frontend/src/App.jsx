@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import NavBar from './components/NavBar'
+import Navbar from './components/Navbar'
 import MainContent from './components/MainContent'
 
 import Footer from './components/Footer'
@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <NavBar />
+      <Navbar />
       <div className="site-container">
         <MainContent />
       </div>
