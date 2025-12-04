@@ -1,5 +1,5 @@
 import React from 'react'
-import clubLogos from "../assets/clublogos"
+import clubLogos from "../assets/clblogos"
 import '../sections/Clubs/club.css'
 
 export default function ClubCard({ abbr, name, desc, focusAreas = [], activities = [], who, keywords = [], events = [], onApply }) {
