@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.hero-div{
+    margin:0px 0px 0px 150px;
+}
+
+.blue-hero{
+  color: #0f3b86;
+
+}
+
+
+.gray-hero{
+     color: #5b6a7a;
+}
+.hero{
+    width: 45vw;
+    /* margin-left: 100px; */
+    line-height: 70px;
+    text-align: left;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 65px;
+}
+.line1{
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1px;
+    font-weight: 500;
+}
+
+.line2{
+    margin-top: 20px;
+    text-align: left;
+    font-weight: 500;
+    color: rgb(225, 44, 44);
+}
+.hero-btn{
+    border: 1px solid #5b6a7a;
+    margin:20px 10px 20px 0;
+    width: 200px;
+    padding: 2px 6px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+
+.clubCollection{
+    display: none;
+}
+
+.hero-div{
+    background-image: "./assets/clblogos/clublogos.svg";
+    margin:auto
+}
+.hero{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+
+}
+.line1,.line2{
+    font-size: 16px;
+    text-align: center;
+}
+.hero-btn-div{
+    justify-content: center;
+}
+
+}
+
+
