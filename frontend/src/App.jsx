@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import MainContent from './components/MainContent'
-
+import Loader from './components/Loader/Loader'
 import Footer from './sections/Footer/Footer'
 
 export default function App() {
-  // const [loading, setLoading] = useState(true)
-  // useEffect(() => {
-  //   const t = setTimeout(() => setLoading(false), 4000)
-  //   return () => clearTimeout(t)
-  // }, [])
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000)
+    return () => clearTimeout(timer)
+  }, [])
 
-  // if (loading) {
-  //   return (
-  //     <div className="loader-container">
-  //       <img src="/loader.gif" alt="Loading" className="loader-gif" />
-  //     </div>
-  //   )
-  // }
+  if (loading) {
+    return <Loader />
+  }
 
   return (
     <div className="app">

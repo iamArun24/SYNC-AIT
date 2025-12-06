@@ -21,7 +21,7 @@ export default function KnowMore({
   const images = club.media;
 
   return (
-    <div className="fixed z-[10] left-0 right-0 flex justify-center bg-black/50">
+    <div className="fixed z-[20] left-0 right-0 flex justify-center bg-black/50">
       <div className="relative w-[95%] max-w-[920px] h-120 overflow-y-auto rounded-xl bg-white p-5 shadow-[0_10px_40px_rgba(2,6,23,0.3)]">
         <button
           onClick={onClose}

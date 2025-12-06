@@ -33,7 +33,7 @@ export default function Navbar(){
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#clubs">Clubs</a></li>
-            <li><a href="#secretary">Secretary</a></li>
+            <li><a href="https://www.gdgaitpune.me">Team</a></li>
             <li><a href="#calendar">Calender</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
