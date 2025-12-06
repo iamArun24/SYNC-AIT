@@ -3,12 +3,15 @@ import './NavBar.css'
 import logo from '../../assets/synclogo.svg'
 import Hamburger from '../Hamburger'
 import SideBar from '../SideBar'
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar(){
   const [open, setOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 900)
+  const navigate = useNavigate();
 
   useEffect(() => {
+    
     const handleResize = () => setIsMobile(window.innerWidth <= 900)
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
@@ -20,7 +23,7 @@ export default function Navbar(){
   return (
     <header className="navbar" role="banner">
       <div className="nav-left">
-        <img src={logo} alt="AIT Pune" className="logo" />
+        <img src={logo} alt="AIT Pune" className="logo"  onClick={()=>navigate('/')}/>
       </div>
       {isMobile && (
         <div className="nav-right">
@@ -28,7 +31,7 @@ export default function Navbar(){
         </div>
       )}
       {!isMobile && (
-        <nav className="nav-center" role="navigation" aria-label="Top navigation">
+        <nav className="nav-center inline-flex" role="navigation" aria-label="Top navigation">
           <ul className="top-nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -37,6 +40,7 @@ export default function Navbar(){
             <li><a href="#calendar">Calender</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
+          <button className='btn-primary absolute right-10' onClick={()=>navigate("/login")}>Login</button>
         </nav>
       )}
       {isMobile && (
